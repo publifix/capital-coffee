@@ -1,0 +1,76 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - "**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Stage site
+        run: |
+          mkdir -p _site
+          shopt -s dotglob
+          for item in *; do
+            case "$item" in
+              _site) continue ;;
+            esac
+            cp -r "$item" _site/
+          done
+          rm -rf _site/.git _site/.github _site/.claude
+
+          if [ ! -f _site/index.html ]; then
+            cat > _site/index.html <<'HTML'
+          <!doctype html>
+          <html lang="es">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Capital Coffee</title>
+            <style>
+              body { margin:0; min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1.5rem; font-family: system-ui, sans-serif; background:#1b120b; color:#f5ece1; text-align:center; padding:2rem; }
+              img { max-width:220px; }
+              p { opacity:.75; max-width:32rem; }
+            </style>
+          </head>
+          <body>
+            <img src="Logo.png" alt="Capital Coffee">
+            <h1>Capital Coffee</h1>
+            <p>Sitio en construccion. Esta pagina se publica automaticamente en cada cambio.</p>
+          </body>
+          </html>
+          HTML
+          fi
+
+          touch _site/.nojekyll
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
