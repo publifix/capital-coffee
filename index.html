@@ -1,0 +1,1654 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#121212" />
+
+  <title>Capital Coffee — Café de Especialidad y Brunch en San Luis Potosí</title>
+  <meta name="description" content="Capital Coffee: cafetería y restaurante de brunch de especialidad en Col. Jardín, San Luis Potosí. Café, brunch, crepas, sandwiches y coctelería todos los días." />
+  <meta name="keywords" content="café de especialidad, brunch San Luis Potosí, cafetería SLP, Capital Coffee, coctelería SLP, desayunos San Luis Potosí, Col. Jardín" />
+  <meta name="author" content="Capital Coffee" />
+  <link rel="canonical" href="https://publifix.github.io/capital-coffee/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant.restaurant" />
+  <meta property="og:title" content="Capital Coffee — Café de Especialidad y Brunch en San Luis Potosí" />
+  <meta property="og:description" content="Café de especialidad, brunch y coctelería en el corazón de San Luis Potosí. Tu escape favorito en la ciudad." />
+  <meta property="og:url" content="https://publifix.github.io/capital-coffee/" />
+  <meta property="og:image" content="https://publifix.github.io/capital-coffee/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:site_name" content="Capital Coffee" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Capital Coffee — Café de Especialidad y Brunch en San Luis Potosí" />
+  <meta name="twitter:description" content="Café de especialidad, brunch y coctelería en el corazón de San Luis Potosí. Tu escape favorito en la ciudad." />
+  <meta name="twitter:image" content="https://publifix.github.io/capital-coffee/og-image.jpg" />
+
+  <!-- Favicons / PWA -->
+  <link rel="icon" type="image/png" sizes="32x32" href="%BASE_URL%icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="%BASE_URL%icons/favicon-192.png" />
+  <link rel="apple-touch-icon" href="%BASE_URL%icons/apple-touch-icon.png" />
+  <link rel="manifest" href="%BASE_URL%site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+  />
+  <link rel="preload" as="image" href="%BASE_URL%img/hero-1440.webp" imagesrcset="%BASE_URL%img/hero-480.webp 480w, %BASE_URL%img/hero-768.webp 768w, %BASE_URL%img/hero-1024.webp 1024w, %BASE_URL%img/hero-1440.webp 1440w" fetchpriority="high" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Capital Coffee",
+    "image": "https://publifix.github.io/capital-coffee/og-image.jpg",
+    "url": "https://publifix.github.io/capital-coffee/",
+    "telephone": "+524442468714",
+    "email": "capitalcoffeeslp@gmail.com",
+    "servesCuisine": ["Brunch", "Café de especialidad", "Cocina mexicana"],
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Cuauhtémoc 1327, Col. Jardín",
+      "addressLocality": "San Luis Potosí",
+      "addressRegion": "S.L.P.",
+      "postalCode": "78270",
+      "addressCountry": "MX"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "08:00",
+      "closes": "22:00"
+    },
+    "sameAs": [
+      "https://www.instagram.com/capitalcoffeesanluis",
+      "https://www.facebook.com/p/Capital-Coffee-San-Luis-61573811275239"
+    ],
+    "menu": "https://publifix.github.io/capital-coffee/#menu"
+  }
+  </script>
+
+  <script type="module" src="/src/js/main.js"></script>
+</head>
+<body class="bg-capital-cream text-capital-black">
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+
+  <!-- Preloader -->
+  <div id="preloader" class="fixed inset-0 z-[100] flex items-center justify-center bg-capital-black" aria-hidden="true">
+    <img src="%BASE_URL%img/logo.png" alt="" class="h-16 w-auto animate-pulse" width="220" height="220" />
+  </div>
+
+  <!-- Scroll progress -->
+  <div id="scroll-progress" class="fixed inset-x-0 top-0 z-50 h-[3px] origin-left scale-x-0 bg-capital-gold" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header id="site-header" class="fixed inset-x-0 top-0 z-40 transition-transform duration-500 ease-capital">
+    <div class="mx-auto flex max-w-[1440px] items-center justify-between gap-4 px-5 py-4 sm:px-8 dg:px-12">
+      <a href="#inicio" class="logo shrink-0" aria-label="Capital Coffee — Inicio">
+        <img src="%BASE_URL%img/logo.png" alt="Capital Coffee" class="h-9 w-auto sm:h-10" width="220" height="220" />
+      </a>
+
+      <nav class="hidden items-center gap-8 lg:flex" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#paquete-capital" class="nav-link">Paquete Capital</a>
+        <a href="#menu" class="nav-link">Menú</a>
+        <a href="#ubicacion" class="nav-link">Ubicación</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a
+          href="https://wa.me/524442468714"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-gold hidden sm:inline-flex"
+        >Ordena por WhatsApp</a>
+        <button
+          id="nav-toggle"
+          type="button"
+          class="flex h-11 w-11 items-center justify-center text-capital-white lg:hidden"
+          aria-controls="mobile-nav"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Abrir menú</span>
+          <span class="hamburger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <nav
+    id="mobile-nav"
+    class="fixed inset-0 z-50 flex translate-x-full flex-col overflow-y-auto bg-capital-black transition-transform duration-500 ease-capital"
+    aria-hidden="true"
+    aria-label="Navegación móvil"
+  >
+    <div class="flex shrink-0 items-center justify-between px-5 py-4 sm:px-8">
+      <a href="#inicio" class="logo" data-nav-close aria-label="Capital Coffee — Inicio">
+        <img src="%BASE_URL%img/logo.png" alt="Capital Coffee" class="h-9 w-auto" width="220" height="220" />
+      </a>
+      <button id="nav-close" type="button" class="flex h-11 w-11 items-center justify-center text-capital-white">
+        <span class="sr-only">Cerrar menú</span>
+        <span class="close-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <div class="flex flex-1 flex-col items-start justify-center gap-1 px-8 py-6">
+      <a href="#inicio" data-nav-close class="mobile-nav-link">Inicio</a>
+      <a href="#nosotros" data-nav-close class="mobile-nav-link">Nosotros</a>
+      <a href="#paquete-capital" data-nav-close class="mobile-nav-link">Paquete Capital</a>
+      <a href="#menu" data-nav-close class="mobile-nav-link">Menú</a>
+      <a href="#ubicacion" data-nav-close class="mobile-nav-link">Ubicación</a>
+      <a href="#contacto" data-nav-close class="mobile-nav-link">Contacto</a>
+    </div>
+
+    <div class="flex flex-col gap-6 px-8 pb-10">
+      <a href="https://wa.me/524442468714" target="_blank" rel="noopener noreferrer" class="btn-gold justify-center" data-nav-close>
+        Ordena por WhatsApp
+      </a>
+      <div class="flex items-center gap-5">
+        <a href="https://www.instagram.com/capitalcoffeesanluis" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Capital Coffee en Instagram">
+          <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none" /></svg>
+        </a>
+        <a href="https://www.facebook.com/p/Capital-Coffee-San-Luis-61573811275239" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Capital Coffee en Facebook">
+          <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 4h-2a4 4 0 0 0-4 4v3H7v4h2v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3Z" /></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="inicio" class="hero relative flex min-h-[100svh] items-end overflow-hidden bg-capital-black">
+      <div class="hero__media absolute inset-0" data-parallax>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="%BASE_URL%img/hero-480.webp 480w, %BASE_URL%img/hero-768.webp 768w, %BASE_URL%img/hero-1024.webp 1024w, %BASE_URL%img/hero-1440.webp 1440w"
+            sizes="100vw"
+          />
+          <img
+            src="%BASE_URL%img/hero-fallback.jpg"
+            alt="Smoothie de fresa y bebida de mango con flores comestibles junto a una ensalada, sobre mesa de madera en Capital Coffee"
+            class="h-full w-full object-cover"
+            width="1440"
+            height="1920"
+            fetchpriority="high"
+          />
+        </picture>
+        <div class="absolute inset-0 bg-gradient-to-t from-capital-black via-capital-black/40 to-capital-black/10"></div>
+        <div class="absolute inset-0 bg-capital-black/25"></div>
+      </div>
+
+      <div class="relative z-10 mx-auto w-full max-w-[1440px] px-5 pb-20 pt-40 sm:px-8 sm:pb-28 dg:px-12">
+        <div class="max-w-2xl reveal" data-reveal>
+          <p class="kicker text-capital-gold">Cafetería de especialidad · San Luis Potosí</p>
+          <h1 class="mt-4 font-display text-[2.4rem] font-extrabold leading-[1.05] text-capital-white sm:text-6xl dg:text-7xl">
+            Tu escape favorito en la ciudad
+          </h1>
+          <p class="mt-6 max-w-lg text-lg leading-relaxed text-capital-white/85">
+            Café de especialidad, brunch y buena compañía en el corazón de San Luis Potosí.
+          </p>
+          <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+            <a href="#menu" class="btn-gold justify-center">¡Explora nuestro menú y conócenos!</a>
+            <a
+              href="https://wa.me/524442468714"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline justify-center"
+            >Ordena por WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="nosotros" class="bg-capital-cream py-24 sm:py-28 dg:py-32">
+      <div class="mx-auto grid max-w-[1440px] items-center gap-12 px-5 sm:px-8 md:grid-cols-2 md:gap-16 dg:px-12">
+        <div class="reveal" data-reveal>
+          <p class="kicker text-capital-black/65">Sobre nosotros</p>
+          <h2 class="mt-4 font-display text-4xl font-bold leading-tight text-capital-black sm:text-5xl">
+            Café de especialidad, brunch con carácter
+          </h2>
+          <p class="mt-6 max-w-xl text-lg leading-relaxed text-capital-black/65">
+            Capital Coffee es una cafetería y restaurante de brunch en el corazón de San Luis Potosí, con café de
+            especialidad, cocina de autor y un menú que va del desayuno clásico a la coctelería. Un punto de
+            encuentro para trabajar, platicar o simplemente hacer una pausa en medio de la ciudad.
+          </p>
+        </div>
+        <div class="reveal aspect-[4/5] overflow-hidden rounded-3xl md:aspect-[3/4]" data-reveal data-reveal-delay="120">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="%BASE_URL%img/about-480.webp 480w, %BASE_URL%img/about-768.webp 768w, %BASE_URL%img/about-1024.webp 1024w, %BASE_URL%img/about-1440.webp 1440w"
+              sizes="(min-width: 768px) 45vw, 100vw"
+            />
+            <img
+              src="%BASE_URL%img/about-fallback.jpg"
+              alt="Brownie de chocolate con helado, fresa y flor comestible, postre de Capital Coffee"
+              class="h-full w-full object-cover"
+              width="1440"
+              height="1920"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAQUETE CAPITAL -->
+    <section id="paquete-capital" class="relative overflow-hidden bg-capital-black py-24 text-capital-white sm:py-28 dg:py-32">
+      <div class="mx-auto grid max-w-[1440px] items-center gap-12 px-5 sm:px-8 md:grid-cols-2 md:gap-16 dg:px-12">
+        <div class="order-2 aspect-[4/5] overflow-hidden rounded-3xl reveal md:order-1 md:aspect-[3/4]" data-reveal>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="%BASE_URL%img/paquete-capital-480.webp 480w, %BASE_URL%img/paquete-capital-768.webp 768w, %BASE_URL%img/paquete-capital-1024.webp 1024w, %BASE_URL%img/paquete-capital-1440.webp 1440w"
+              sizes="(min-width: 768px) 45vw, 100vw"
+            />
+            <img
+              src="%BASE_URL%img/paquete-capital-fallback.jpg"
+              alt="Chilaquiles rojos con queso fresco y café de especialidad, ejemplo del Paquete Capital"
+              class="h-full w-full object-cover"
+              width="1440"
+              height="1920"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+        </div>
+
+        <div class="order-1 reveal md:order-2" data-reveal data-reveal-delay="120">
+          <p class="kicker text-capital-gold">El favorito</p>
+          <h2 class="mt-4 font-display text-4xl font-bold leading-tight sm:text-5xl">Paquete Capital</h2>
+          <p class="mt-6 text-lg leading-relaxed text-capital-white/85">
+            Platillo + Bebida + Galleta, por <span class="font-display font-bold text-capital-gold">$209</span>.
+            Disponible en dos versiones: menú de desayunos o carta general — elige tu platillo favorito y
+            acompáñalo con tu bebida.
+          </p>
+
+          <div class="mt-10 grid gap-6 sm:grid-cols-2">
+            <div class="rounded-2xl border border-capital-white/15 p-6">
+              <p class="font-display text-lg font-bold text-capital-gold">Versión Desayunos</p>
+              <p class="kicker mt-4 text-capital-white/60">Platillo</p>
+              <ul class="mt-2 space-y-1.5 text-sm leading-relaxed text-capital-white/85">
+                <li>Chilaquiles rojos o verdes (naturales)</li>
+                <li>Huevos rancheros o divorciados</li>
+                <li>Huevos al gusto (2 ingredientes)</li>
+                <li>Molletes (naturales)</li>
+                <li>Enchiladas potosinas</li>
+                <li>Omelette al gusto (2 ingredientes)</li>
+              </ul>
+              <p class="kicker mt-5 text-capital-white/60">Bebida</p>
+              <ul class="mt-2 space-y-1.5 text-sm leading-relaxed text-capital-white/85">
+                <li>Café americano</li>
+                <li>Agua natural o mineral</li>
+                <li>Refresco</li>
+                <li>Jugo de naranja</li>
+              </ul>
+            </div>
+
+            <div class="rounded-2xl border border-capital-white/15 p-6">
+              <p class="font-display text-lg font-bold text-capital-gold">Versión Carta General</p>
+              <p class="kicker mt-4 text-capital-white/60">Platillo</p>
+              <ul class="mt-2 space-y-1.5 text-sm leading-relaxed text-capital-white/85">
+                <li>Ensalada de Salmón</li>
+                <li>Ensalada de Fresa</li>
+                <li>Sandwich o Crepa de Pollo</li>
+                <li>Sandwich o Crepa Vegetariana</li>
+                <li>Sandwich Roastbeef</li>
+                <li>Crepa de Manzana al Brandy</li>
+                <li>Crepa de Nutella y Plátano</li>
+              </ul>
+              <p class="kicker mt-5 text-capital-white/60">Bebida</p>
+              <ul class="mt-2 space-y-1.5 text-sm leading-relaxed text-capital-white/85">
+                <li>Café americano</li>
+                <li>Agua natural o mineral</li>
+                <li>Refresco</li>
+                <li>Cerveza (XX o Bohemia)</li>
+              </ul>
+            </div>
+          </div>
+
+          <a
+            href="https://wa.me/524442468714"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-gold mt-10 justify-center sm:justify-start"
+          >Ordena por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="bg-capital-cream py-24 sm:py-28 dg:py-32">
+      <div class="mx-auto max-w-[1440px] px-5 sm:px-8 dg:px-12">
+        <div class="mx-auto max-w-2xl text-center reveal" data-reveal>
+          <p class="kicker text-capital-black/65">Menú</p>
+          <h2 class="mt-4 font-display text-4xl font-bold leading-tight text-capital-black sm:text-5xl">
+            Todo lo que preparamos
+          </h2>
+          <p class="mt-6 text-lg leading-relaxed text-capital-black/65">
+            De un brunch completo a una noche de carajillos, el menú de Capital Coffee tiene algo para cada
+            momento del día.
+          </p>
+        </div>
+
+        <div class="mx-auto mt-14 max-w-3xl reveal" data-reveal>
+              <div class="menu-category border-b border-capital-stone/20" data-menu-category>
+                <h3 class="m-0">
+                  <button type="button" id="menu-trigger-lo-clasico" class="menu-category__trigger group flex w-full items-center justify-between gap-4 py-5 text-left" aria-expanded="false" aria-controls="menu-panel-lo-clasico">
+                    <span class="flex items-baseline gap-3">
+                      <span class="font-display text-xl font-bold text-capital-black sm:text-2xl">Lo Clásico</span>
+                      <span class="kicker text-capital-black/65">Desayunos</span>
+                    </span>
+                    <span class="menu-category__icon relative h-4 w-4 shrink-0 text-capital-black" aria-hidden="true">
+                      <span class="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2 bg-current transition-transform duration-300 group-aria-expanded:rotate-90"></span>
+                      <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-current"></span>
+                    </span>
+                  </button>
+                </h3>
+                <div id="menu-panel-lo-clasico" role="region" aria-labelledby="menu-trigger-lo-clasico" class="menu-category__panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-capital">
+                  <div class="overflow-hidden">
+                    <ul class="menu-items grid gap-x-8 gap-y-4 pb-6 sm:grid-cols-2">
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Plato de Fruta</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$110</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Chilaquiles rojos</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$155</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">pollo o huevo, naturales o muy picosos</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Chilaquiles verdes</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$155</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">pollo o huevo, naturales o muy picosos</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Chilaquiles con mole</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$155</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">pollo o huevo, naturales o muy picosos</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Chilaquiles con chicharrón de aldilla</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$165</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Enrolladas de pollo</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$155</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Enchiladas suizas</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$155</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Enchiladas potosinas</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$149</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Huevos al gusto</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$155</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">2 ingredientes: jamón, pollo, champiñones, tocino, chorizo, espinacas, tomate, queso asadero o panela</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Omelette al gusto</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$135</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">mismos ingredientes</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Huevos rancheros</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$135</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Huevos divorciados</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$135</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Huevos a la diabla</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$149</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Molletes</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$145</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">dos piezas grandes, 2 ingredientes: jamón, pollo, champiñones, tocino, chorizo, espinacas o jitomate</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Flautas ahogadas</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$155</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">papa o pollo, salsa roja o verde</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-category border-b border-capital-stone/20" data-menu-category>
+                <h3 class="m-0">
+                  <button type="button" id="menu-trigger-seccion-capital" class="menu-category__trigger group flex w-full items-center justify-between gap-4 py-5 text-left" aria-expanded="false" aria-controls="menu-panel-seccion-capital">
+                    <span class="flex items-baseline gap-3">
+                      <span class="font-display text-xl font-bold text-capital-black sm:text-2xl">Sección Capital</span>
+                      <span class="kicker text-capital-black/65">Desayunos de autor</span>
+                    </span>
+                    <span class="menu-category__icon relative h-4 w-4 shrink-0 text-capital-black" aria-hidden="true">
+                      <span class="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2 bg-current transition-transform duration-300 group-aria-expanded:rotate-90"></span>
+                      <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-current"></span>
+                    </span>
+                  </button>
+                </h3>
+                <div id="menu-panel-seccion-capital" role="region" aria-labelledby="menu-trigger-seccion-capital" class="menu-category__panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-capital">
+                  <div class="overflow-hidden">
+                    <ul class="menu-items grid gap-x-8 gap-y-4 pb-6 sm:grid-cols-2">
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Bagel Camaracho</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$150</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">tocino, queso manchego, queso de cabra, aguacate y huevo estrellado</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Avocado Toast</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$150</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">pan campestre, queso de cabra, aguacate, jitomate cherry y huevo pochê</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Huevos Trufados</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$150</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">huevos revueltos con albahaca y aceite de trufa, champiñones y jitomate cherry</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Huevos Benedictinos</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$150</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">2 huevos pochados sobre muffin inglés, jamón serrano, salsa holandesa</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Omelette de queso cabra, albahaca y tomate deshidratado</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$150</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Omelette de ricotta y espinacas</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$150</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">pesto de tomate deshidratado, espinacas y queso ricotta</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Croque Monsieur</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$150</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">jamón, queso, salsa bechamel, parmesano gratinado</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Croque Madame</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$150</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">croque monsieur con huevo estrellado</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Portobello Estrellado</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$155</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">2 portobello rellenos de queso sobre huevo estrellado, salsa roja y verde</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Pan Francés</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$150</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Hotcakes</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$140</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-category border-b border-capital-stone/20" data-menu-category>
+                <h3 class="m-0">
+                  <button type="button" id="menu-trigger-entradas" class="menu-category__trigger group flex w-full items-center justify-between gap-4 py-5 text-left" aria-expanded="false" aria-controls="menu-panel-entradas">
+                    <span class="flex items-baseline gap-3">
+                      <span class="font-display text-xl font-bold text-capital-black sm:text-2xl">Entradas</span>
+                    </span>
+                    <span class="menu-category__icon relative h-4 w-4 shrink-0 text-capital-black" aria-hidden="true">
+                      <span class="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2 bg-current transition-transform duration-300 group-aria-expanded:rotate-90"></span>
+                      <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-current"></span>
+                    </span>
+                  </button>
+                </h3>
+                <div id="menu-panel-entradas" role="region" aria-labelledby="menu-trigger-entradas" class="menu-category__panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-capital">
+                  <div class="overflow-hidden">
+                    <ul class="menu-items grid gap-x-8 gap-y-4 pb-6 sm:grid-cols-2">
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Ensalada de fresa</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$149</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">receta de gaucho argentino</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Ensalada de salmón</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$149</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">lechugas, salmón ahumado, espinacas, champiñones, tomate asado, queso panela, vinagreta de miel y mostaza</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Tostadas de atún</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$115</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">4 mini tostadas, mayonesa de pesto, aguacate, atún, perejil frito</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Tapas de la casa</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$115</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">5 piezas, queso de cabra al vino tinto, salami crocante, tomate deshidratado</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-category border-b border-capital-stone/20" data-menu-category>
+                <h3 class="m-0">
+                  <button type="button" id="menu-trigger-crepas-saladas" class="menu-category__trigger group flex w-full items-center justify-between gap-4 py-5 text-left" aria-expanded="false" aria-controls="menu-panel-crepas-saladas">
+                    <span class="flex items-baseline gap-3">
+                      <span class="font-display text-xl font-bold text-capital-black sm:text-2xl">Crepas Saladas</span>
+                    </span>
+                    <span class="menu-category__icon relative h-4 w-4 shrink-0 text-capital-black" aria-hidden="true">
+                      <span class="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2 bg-current transition-transform duration-300 group-aria-expanded:rotate-90"></span>
+                      <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-current"></span>
+                    </span>
+                  </button>
+                </h3>
+                <div id="menu-panel-crepas-saladas" role="region" aria-labelledby="menu-trigger-crepas-saladas" class="menu-category__panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-capital">
+                  <div class="overflow-hidden">
+                    <ul class="menu-items grid gap-x-8 gap-y-4 pb-6 sm:grid-cols-2">
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Pechuga de pollo</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$189</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">queso pepper jack, tomate a la plancha, cebolla caramelizada, salsa aurora</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Jamón Serrano</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$189</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">queso de cabra, jamón serrano, arúgula, tomate a la plancha, salsa aurora</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Siciliana</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$189</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">salami, pepperoni, queso ricotta, espinacas, salsa siciliana</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Vegetariana</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$185</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">champiñones, pesto de tomate deshidratado, espinacas, queso gouda, salsa aurora</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-category border-b border-capital-stone/20" data-menu-category>
+                <h3 class="m-0">
+                  <button type="button" id="menu-trigger-crepas-dulces" class="menu-category__trigger group flex w-full items-center justify-between gap-4 py-5 text-left" aria-expanded="false" aria-controls="menu-panel-crepas-dulces">
+                    <span class="flex items-baseline gap-3">
+                      <span class="font-display text-xl font-bold text-capital-black sm:text-2xl">Crepas Dulces</span>
+                    </span>
+                    <span class="menu-category__icon relative h-4 w-4 shrink-0 text-capital-black" aria-hidden="true">
+                      <span class="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2 bg-current transition-transform duration-300 group-aria-expanded:rotate-90"></span>
+                      <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-current"></span>
+                    </span>
+                  </button>
+                </h3>
+                <div id="menu-panel-crepas-dulces" role="region" aria-labelledby="menu-trigger-crepas-dulces" class="menu-category__panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-capital">
+                  <div class="overflow-hidden">
+                    <ul class="menu-items grid gap-x-8 gap-y-4 pb-6 sm:grid-cols-2">
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Nutella</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$165</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">plátano ó fresas</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Cajeta</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$159</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">cajeta, plátano macho, nuez, helado</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Manzana al Brandy</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$159</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Queso Ricotta y Frutos Rojos</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$159</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-category border-b border-capital-stone/20" data-menu-category>
+                <h3 class="m-0">
+                  <button type="button" id="menu-trigger-sandwiches" class="menu-category__trigger group flex w-full items-center justify-between gap-4 py-5 text-left" aria-expanded="false" aria-controls="menu-panel-sandwiches">
+                    <span class="flex items-baseline gap-3">
+                      <span class="font-display text-xl font-bold text-capital-black sm:text-2xl">Sandwiches</span>
+                    </span>
+                    <span class="menu-category__icon relative h-4 w-4 shrink-0 text-capital-black" aria-hidden="true">
+                      <span class="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2 bg-current transition-transform duration-300 group-aria-expanded:rotate-90"></span>
+                      <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-current"></span>
+                    </span>
+                  </button>
+                </h3>
+                <div id="menu-panel-sandwiches" role="region" aria-labelledby="menu-trigger-sandwiches" class="menu-category__panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-capital">
+                  <div class="overflow-hidden">
+                    <ul class="menu-items grid gap-x-8 gap-y-4 pb-6 sm:grid-cols-2">
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Roast Beef</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$195</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">queso manchego, manzana, miel y mostaza, espinacas, roast beef casero</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Pechuga de pollo</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$195</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">queso pepper jack, tomate a la plancha, cebolla caramelizada, salsa aurora</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Italiano</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$185</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">salami, pepperoni, tomate a la plancha, champiñones, mozzarella fresco</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Español</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$195</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">jamón serrano, cebolla caramelizada, queso manchego, arúgula, perejil</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Vegetariano</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$185</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">champiñones, pesto de tomate deshidratado, espinacas, queso gouda, salsa aurora</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Borgini</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$195</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">queso de cabra, queso ricotta, aceite de trufa, jamón serrano, espárragos, pesto de albahaca</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-category border-b border-capital-stone/20" data-menu-category>
+                <h3 class="m-0">
+                  <button type="button" id="menu-trigger-platos-fuertes" class="menu-category__trigger group flex w-full items-center justify-between gap-4 py-5 text-left" aria-expanded="false" aria-controls="menu-panel-platos-fuertes">
+                    <span class="flex items-baseline gap-3">
+                      <span class="font-display text-xl font-bold text-capital-black sm:text-2xl">Platos Fuertes</span>
+                    </span>
+                    <span class="menu-category__icon relative h-4 w-4 shrink-0 text-capital-black" aria-hidden="true">
+                      <span class="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2 bg-current transition-transform duration-300 group-aria-expanded:rotate-90"></span>
+                      <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-current"></span>
+                    </span>
+                  </button>
+                </h3>
+                <div id="menu-panel-platos-fuertes" role="region" aria-labelledby="menu-trigger-platos-fuertes" class="menu-category__panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-capital">
+                  <div class="overflow-hidden">
+                    <ul class="menu-items grid gap-x-8 gap-y-4 pb-6 sm:grid-cols-2">
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Hamburguesa Portobello</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$215</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">ribeye, mayonesa de pesto, portobello, zanahoria frita, queso, con papas</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Poke Bowl</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$169</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">atún, pollo o salmón ahumado; arroz, quinoa, fideos chinos, aguacate, salsa ponzu, edamames con sriracha</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Hamburguesa Buffalo</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$215</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">ribeye, mayonesa, tomate, cebolla, salsa buffalo, con papas</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Orden papas a la francesa</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$115</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-category border-b border-capital-stone/20" data-menu-category>
+                <h3 class="m-0">
+                  <button type="button" id="menu-trigger-pan-dulce-postres" class="menu-category__trigger group flex w-full items-center justify-between gap-4 py-5 text-left" aria-expanded="false" aria-controls="menu-panel-pan-dulce-postres">
+                    <span class="flex items-baseline gap-3">
+                      <span class="font-display text-xl font-bold text-capital-black sm:text-2xl">Pan Dulce y Postres</span>
+                    </span>
+                    <span class="menu-category__icon relative h-4 w-4 shrink-0 text-capital-black" aria-hidden="true">
+                      <span class="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2 bg-current transition-transform duration-300 group-aria-expanded:rotate-90"></span>
+                      <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-current"></span>
+                    </span>
+                  </button>
+                </h3>
+                <div id="menu-panel-pan-dulce-postres" role="region" aria-labelledby="menu-trigger-pan-dulce-postres" class="menu-category__panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-capital">
+                  <div class="overflow-hidden">
+                    <ul class="menu-items grid gap-x-8 gap-y-4 pb-6 sm:grid-cols-2">
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Concha</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$49</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">relleno de tiramisú, nata, dulce de leche, nutella o helado +$25</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Pan Monstro</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$75</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Danés</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$49</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Rol de canela o guayaba</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$49</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Croissant</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$45</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Pain au chocolat</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$49</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Trenza</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$49</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Brownie</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$115</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">acompañado de helado</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Tartaleta de limón</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$115</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Helado</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$75</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Affogato</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$89</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Tarta vasca</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$115</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Muffin</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$49</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Galleta</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$39</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Tiramisú express</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$105</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-category border-b border-capital-stone/20" data-menu-category>
+                <h3 class="m-0">
+                  <button type="button" id="menu-trigger-cafes" class="menu-category__trigger group flex w-full items-center justify-between gap-4 py-5 text-left" aria-expanded="false" aria-controls="menu-panel-cafes">
+                    <span class="flex items-baseline gap-3">
+                      <span class="font-display text-xl font-bold text-capital-black sm:text-2xl">Cafés</span>
+                    </span>
+                    <span class="menu-category__icon relative h-4 w-4 shrink-0 text-capital-black" aria-hidden="true">
+                      <span class="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2 bg-current transition-transform duration-300 group-aria-expanded:rotate-90"></span>
+                      <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-current"></span>
+                    </span>
+                  </button>
+                </h3>
+                <div id="menu-panel-cafes" role="region" aria-labelledby="menu-trigger-cafes" class="menu-category__panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-capital">
+                  <div class="overflow-hidden">
+                    <ul class="menu-items grid gap-x-8 gap-y-4 pb-6 sm:grid-cols-2">
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Espresso doble</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$49</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Americano de especialidad</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$59</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">V60</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Americano</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$49</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Americano refill</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$69</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Latte</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$75</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Cappuccino</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$65</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Macchiato</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$55</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Cold Brew</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$65</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="menu-note mb-6 rounded-2xl bg-capital-black/[0.04] p-5">
+                      <p class="font-display text-sm font-bold uppercase tracking-wide text-capital-black">Personaliza tu café</p>
+                      <p class="mt-2 text-sm leading-relaxed text-capital-black/65">Sabores: macadamia, avellana, lotus, chocolate obscuro o blanco, dulce de leche con canela, vainilla. Leche: light, deslactosada, deslactosada light, coco, almendras, avena.</p>
+                      <p class="mt-2 text-xs italic text-capital-black/65">// MOCK — costo extra exacto pendiente de confirmar con el negocio</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-category border-b border-capital-stone/20" data-menu-category>
+                <h3 class="m-0">
+                  <button type="button" id="menu-trigger-carajillos" class="menu-category__trigger group flex w-full items-center justify-between gap-4 py-5 text-left" aria-expanded="false" aria-controls="menu-panel-carajillos">
+                    <span class="flex items-baseline gap-3">
+                      <span class="font-display text-xl font-bold text-capital-black sm:text-2xl">Carajillos</span>
+                    </span>
+                    <span class="menu-category__icon relative h-4 w-4 shrink-0 text-capital-black" aria-hidden="true">
+                      <span class="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2 bg-current transition-transform duration-300 group-aria-expanded:rotate-90"></span>
+                      <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-current"></span>
+                    </span>
+                  </button>
+                </h3>
+                <div id="menu-panel-carajillos" role="region" aria-labelledby="menu-trigger-carajillos" class="menu-category__panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-capital">
+                  <div class="overflow-hidden">
+                    <ul class="menu-items grid gap-x-8 gap-y-4 pb-6 sm:grid-cols-2">
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Tradicional</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$99</span>
+                        </div>
+                        <p class="mt-1 text-xs italic text-capital-black/65">// MOCK — precio pendiente de confirmar</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Chai</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$109</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Mazapán</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$109</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Canela</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$109</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-category border-b border-capital-stone/20" data-menu-category>
+                <h3 class="m-0">
+                  <button type="button" id="menu-trigger-refreshers" class="menu-category__trigger group flex w-full items-center justify-between gap-4 py-5 text-left" aria-expanded="false" aria-controls="menu-panel-refreshers">
+                    <span class="flex items-baseline gap-3">
+                      <span class="font-display text-xl font-bold text-capital-black sm:text-2xl">Refreshers</span>
+                    </span>
+                    <span class="menu-category__icon relative h-4 w-4 shrink-0 text-capital-black" aria-hidden="true">
+                      <span class="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2 bg-current transition-transform duration-300 group-aria-expanded:rotate-90"></span>
+                      <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-current"></span>
+                    </span>
+                  </button>
+                </h3>
+                <div id="menu-panel-refreshers" role="region" aria-labelledby="menu-trigger-refreshers" class="menu-category__panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-capital">
+                  <div class="overflow-hidden">
+                    <ul class="menu-items grid gap-x-8 gap-y-4 pb-6 sm:grid-cols-2">
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Café</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$69</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Moras</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$69</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Durazno y jengibre</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$69</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-category border-b border-capital-stone/20" data-menu-category>
+                <h3 class="m-0">
+                  <button type="button" id="menu-trigger-infusiones" class="menu-category__trigger group flex w-full items-center justify-between gap-4 py-5 text-left" aria-expanded="false" aria-controls="menu-panel-infusiones">
+                    <span class="flex items-baseline gap-3">
+                      <span class="font-display text-xl font-bold text-capital-black sm:text-2xl">Infusiones</span>
+                    </span>
+                    <span class="menu-category__icon relative h-4 w-4 shrink-0 text-capital-black" aria-hidden="true">
+                      <span class="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2 bg-current transition-transform duration-300 group-aria-expanded:rotate-90"></span>
+                      <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-current"></span>
+                    </span>
+                  </button>
+                </h3>
+                <div id="menu-panel-infusiones" role="region" aria-labelledby="menu-trigger-infusiones" class="menu-category__panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-capital">
+                  <div class="overflow-hidden">
+                    <ul class="menu-items grid gap-x-8 gap-y-4 pb-6 sm:grid-cols-2">
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Té Verde Menta</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$65</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Matcha Latte</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$79</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Chai Latte</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$79</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Matcha Latte &quot;Hippie&quot;</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$89</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Matcha Menta Latte</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$95</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Chai Latte &quot;Hippie&quot;</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$95</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Taro &quot;Hippie&quot;</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$95</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Jengibre Limón</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$65</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Fresa Kiwi</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$65</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Maracuyá</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$65</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Moras De La Selva</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$65</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-category border-b border-capital-stone/20" data-menu-category>
+                <h3 class="m-0">
+                  <button type="button" id="menu-trigger-frappuccinos" class="menu-category__trigger group flex w-full items-center justify-between gap-4 py-5 text-left" aria-expanded="false" aria-controls="menu-panel-frappuccinos">
+                    <span class="flex items-baseline gap-3">
+                      <span class="font-display text-xl font-bold text-capital-black sm:text-2xl">Frappuccinos</span>
+                    </span>
+                    <span class="menu-category__icon relative h-4 w-4 shrink-0 text-capital-black" aria-hidden="true">
+                      <span class="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2 bg-current transition-transform duration-300 group-aria-expanded:rotate-90"></span>
+                      <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-current"></span>
+                    </span>
+                  </button>
+                </h3>
+                <div id="menu-panel-frappuccinos" role="region" aria-labelledby="menu-trigger-frappuccinos" class="menu-category__panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-capital">
+                  <div class="overflow-hidden">
+                    <ul class="menu-items grid gap-x-8 gap-y-4 pb-6 sm:grid-cols-2">
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Baileys</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$99</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Oreo</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$89</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Nutella</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$95</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Galleta con chispas</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$89</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Dulce de leche y canela</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$95</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Mazapán</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$99</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Regular</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$85</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-category border-b border-capital-stone/20" data-menu-category>
+                <h3 class="m-0">
+                  <button type="button" id="menu-trigger-smoothies" class="menu-category__trigger group flex w-full items-center justify-between gap-4 py-5 text-left" aria-expanded="false" aria-controls="menu-panel-smoothies">
+                    <span class="flex items-baseline gap-3">
+                      <span class="font-display text-xl font-bold text-capital-black sm:text-2xl">Smoothies</span>
+                    </span>
+                    <span class="menu-category__icon relative h-4 w-4 shrink-0 text-capital-black" aria-hidden="true">
+                      <span class="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2 bg-current transition-transform duration-300 group-aria-expanded:rotate-90"></span>
+                      <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-current"></span>
+                    </span>
+                  </button>
+                </h3>
+                <div id="menu-panel-smoothies" role="region" aria-labelledby="menu-trigger-smoothies" class="menu-category__panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-capital">
+                  <div class="overflow-hidden">
+                    <ul class="menu-items grid gap-x-8 gap-y-4 pb-6 sm:grid-cols-2">
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Tropical</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$82</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">plátano, fresa, leche de coco</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Taro</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$82</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Mango</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$79</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Mango Chamoy</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$85</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Mango Fresa</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$85</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Frutos del bosque</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$85</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-category border-b border-capital-stone/20" data-menu-category>
+                <h3 class="m-0">
+                  <button type="button" id="menu-trigger-jugos-especiales" class="menu-category__trigger group flex w-full items-center justify-between gap-4 py-5 text-left" aria-expanded="false" aria-controls="menu-panel-jugos-especiales">
+                    <span class="flex items-baseline gap-3">
+                      <span class="font-display text-xl font-bold text-capital-black sm:text-2xl">Jugos Especiales</span>
+                      <span class="kicker text-capital-black/65">$55 cada uno</span>
+                    </span>
+                    <span class="menu-category__icon relative h-4 w-4 shrink-0 text-capital-black" aria-hidden="true">
+                      <span class="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2 bg-current transition-transform duration-300 group-aria-expanded:rotate-90"></span>
+                      <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-current"></span>
+                    </span>
+                  </button>
+                </h3>
+                <div id="menu-panel-jugos-especiales" role="region" aria-labelledby="menu-trigger-jugos-especiales" class="menu-category__panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-capital">
+                  <div class="overflow-hidden">
+                    <ul class="menu-items grid gap-x-8 gap-y-4 pb-6 sm:grid-cols-2">
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Limpieza Profunda</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$55</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">piña, naranja, apio, perejil, hierbabuena</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Rehidratación Tropical</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$55</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">pepino, yuzu, hierbabuena, coco, albahaca</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Amor a Primera Vista</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$55</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">naranja, manzana, jengibre</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Matagripa</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$55</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">naranja, miel, jengibre, polen</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Energía Pura</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$55</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">leche de almendra, amaranto, coco, fresa, vainilla, plátano</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Quema Grasa</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$55</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">naranja, apio, piña, nopal, limón</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Digestión Efectiva</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$55</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">naranja, plátano, zanahoria, papaya, chía</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Detoxicante</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$55</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">limón, jengibre, menta, manzana y naranja</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-category border-b border-capital-stone/20" data-menu-category>
+                <h3 class="m-0">
+                  <button type="button" id="menu-trigger-otras-bebidas" class="menu-category__trigger group flex w-full items-center justify-between gap-4 py-5 text-left" aria-expanded="false" aria-controls="menu-panel-otras-bebidas">
+                    <span class="flex items-baseline gap-3">
+                      <span class="font-display text-xl font-bold text-capital-black sm:text-2xl">Otras Bebidas</span>
+                    </span>
+                    <span class="menu-category__icon relative h-4 w-4 shrink-0 text-capital-black" aria-hidden="true">
+                      <span class="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2 bg-current transition-transform duration-300 group-aria-expanded:rotate-90"></span>
+                      <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-current"></span>
+                    </span>
+                  </button>
+                </h3>
+                <div id="menu-panel-otras-bebidas" role="region" aria-labelledby="menu-trigger-otras-bebidas" class="menu-category__panel grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-capital">
+                  <div class="overflow-hidden">
+                    <ul class="menu-items grid gap-x-8 gap-y-4 pb-6 sm:grid-cols-2">
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Michelada</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$85</span>
+                        </div>
+                        <p class="mt-1 text-sm leading-snug text-capital-black/65">con o sin clamato</p>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Amstel Ultra</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$59</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Bohemia Obscura</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$59</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">XX Lager</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$65</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Cerveza 7 Barrios</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$85</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Copa de vino tinto</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$145</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Naranjada/Limonada</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$49</span>
+                        </div>
+                      </li>
+                      <li class="menu-item min-w-0" data-menu-item>
+                        <div class="flex items-start justify-between gap-3">
+                          <span class="min-w-0 break-words font-body font-medium text-capital-black">Chocolate caliente o frío</span>
+                          <span class="shrink-0 font-body font-bold text-capital-black/65">$69</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+
+        <div class="mt-14 text-center">
+          <a
+            href="https://wa.me/524442468714"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-gold-outline-dark inline-flex"
+          >Ordena por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="bg-capital-black py-24 text-capital-white sm:py-28 dg:py-32">
+      <div class="mx-auto max-w-[1440px] px-5 sm:px-8 dg:px-12">
+        <div class="mx-auto max-w-2xl text-center reveal" data-reveal>
+          <p class="kicker text-capital-gold">Galería</p>
+          <h2 class="mt-4 font-display text-4xl font-bold leading-tight sm:text-5xl">Un vistazo a Capital Coffee</h2>
+        </div>
+
+        <div class="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3" id="gallery-grid">
+          <figure class="gallery-item group relative block aspect-[4/5] overflow-hidden rounded-2xl reveal" data-reveal data-reveal-delay="0">
+            <picture>
+              <source type="image/webp" srcset="%BASE_URL%img/gallery-1-480.webp 480w, %BASE_URL%img/gallery-1-768.webp 768w, %BASE_URL%img/gallery-1-1024.webp 1024w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
+              <img src="%BASE_URL%img/gallery-1-fallback.jpg" alt="Danés de hojaldre con arándanos, frambuesas y zarzamoras" class="h-full w-full object-cover transition-transform duration-700 ease-capital group-hover:scale-105 group-active:scale-105" width="1440" height="1800" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+          <figure class="gallery-item group relative block aspect-[4/5] overflow-hidden rounded-2xl reveal" data-reveal data-reveal-delay="60">
+            <picture>
+              <source type="image/webp" srcset="%BASE_URL%img/gallery-2-480.webp 480w, %BASE_URL%img/gallery-2-768.webp 768w, %BASE_URL%img/gallery-2-1024.webp 1024w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
+              <img src="%BASE_URL%img/gallery-2-fallback.jpg" alt="Enmoladas bañadas en mole con ajonjolí, acompañadas de café" class="h-full w-full object-cover transition-transform duration-700 ease-capital group-hover:scale-105 group-active:scale-105" width="1440" height="1800" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+          <figure class="gallery-item group relative block aspect-[4/5] overflow-hidden rounded-2xl reveal" data-reveal data-reveal-delay="120">
+            <picture>
+              <source type="image/webp" srcset="%BASE_URL%img/gallery-3-480.webp 480w, %BASE_URL%img/gallery-3-768.webp 768w, %BASE_URL%img/gallery-3-1024.webp 1024w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
+              <img src="%BASE_URL%img/gallery-3-fallback.jpg" alt="Persona con canasta de pan artesanal recién horneado, delantal con logo de Capital Coffee" class="h-full w-full object-cover transition-transform duration-700 ease-capital group-hover:scale-105 group-active:scale-105" width="1440" height="1800" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+          <figure class="gallery-item group relative block aspect-[4/5] overflow-hidden rounded-2xl reveal" data-reveal data-reveal-delay="0">
+            <picture>
+              <source type="image/webp" srcset="%BASE_URL%img/gallery-4-480.webp 480w, %BASE_URL%img/gallery-4-768.webp 768w, %BASE_URL%img/gallery-4-1024.webp 1024w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
+              <img src="%BASE_URL%img/gallery-4-fallback.jpg" alt="Dos personas compartiendo café y matcha latte en una mesa de mármol" class="h-full w-full object-cover transition-transform duration-700 ease-capital group-hover:scale-105 group-active:scale-105" width="1440" height="1800" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+          <figure class="gallery-item group relative block aspect-[4/5] overflow-hidden rounded-2xl reveal" data-reveal data-reveal-delay="60">
+            <picture>
+              <source type="image/webp" srcset="%BASE_URL%img/gallery-5-480.webp 480w, %BASE_URL%img/gallery-5-768.webp 768w, %BASE_URL%img/gallery-5-1024.webp 1024w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
+              <img src="%BASE_URL%img/gallery-5-fallback.jpg" alt="Canasta con variedad de pan dulce artesanal recién horneado" class="h-full w-full object-cover transition-transform duration-700 ease-capital group-hover:scale-105 group-active:scale-105" width="1440" height="1800" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+          <figure class="gallery-item group relative block aspect-[4/5] overflow-hidden rounded-2xl reveal" data-reveal data-reveal-delay="120">
+            <picture>
+              <source type="image/webp" srcset="%BASE_URL%img/gallery-6-480.webp 480w, %BASE_URL%img/gallery-6-768.webp 768w, %BASE_URL%img/gallery-6-1024.webp 1024w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
+              <img src="%BASE_URL%img/gallery-6-fallback.jpg" alt="Chef terminando una ensalada fresca con reducción de balsámico" class="h-full w-full object-cover transition-transform duration-700 ease-capital group-hover:scale-105 group-active:scale-105" width="1440" height="1800" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+          <figure class="gallery-item group relative block aspect-[4/5] overflow-hidden rounded-2xl reveal" data-reveal data-reveal-delay="0">
+            <picture>
+              <source type="image/webp" srcset="%BASE_URL%img/gallery-7-480.webp 480w, %BASE_URL%img/gallery-7-768.webp 768w, %BASE_URL%img/gallery-7-1024.webp 1024w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
+              <img src="%BASE_URL%img/gallery-7-fallback.jpg" alt="Repisas con canastas de pan artesanal de la panadería" class="h-full w-full object-cover transition-transform duration-700 ease-capital group-hover:scale-105 group-active:scale-105" width="1440" height="1800" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+          <figure class="gallery-item group relative block aspect-[4/5] overflow-hidden rounded-2xl reveal" data-reveal data-reveal-delay="60">
+            <picture>
+              <source type="image/webp" srcset="%BASE_URL%img/gallery-8-480.webp 480w, %BASE_URL%img/gallery-8-768.webp 768w, %BASE_URL%img/gallery-8-1024.webp 1024w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
+              <img src="%BASE_URL%img/gallery-8-fallback.jpg" alt="Tarta de limón con merengue junto a ensalada de fresa" class="h-full w-full object-cover transition-transform duration-700 ease-capital group-hover:scale-105 group-active:scale-105" width="1440" height="1800" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+          <figure class="gallery-item group relative block aspect-[4/5] overflow-hidden rounded-2xl reveal" data-reveal data-reveal-delay="120">
+            <picture>
+              <source type="image/webp" srcset="%BASE_URL%img/gallery-9-480.webp 480w, %BASE_URL%img/gallery-9-768.webp 768w, %BASE_URL%img/gallery-9-1024.webp 1024w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
+              <img src="%BASE_URL%img/gallery-9-fallback.jpg" alt="Comensal sonriendo con smoothies y bebida frappé" class="h-full w-full object-cover transition-transform duration-700 ease-capital group-hover:scale-105 group-active:scale-105" width="1440" height="1800" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+          <figure class="gallery-item group relative block aspect-[4/5] overflow-hidden rounded-2xl reveal" data-reveal data-reveal-delay="0">
+            <picture>
+              <source type="image/webp" srcset="%BASE_URL%img/gallery-10-480.webp 480w, %BASE_URL%img/gallery-10-768.webp 768w, %BASE_URL%img/gallery-10-1024.webp 1024w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
+              <img src="%BASE_URL%img/gallery-10-fallback.jpg" alt="Rebanada de cheesecake con azúcar glass" class="h-full w-full object-cover transition-transform duration-700 ease-capital group-hover:scale-105 group-active:scale-105" width="1440" height="1800" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+          <figure class="gallery-item group relative block aspect-[4/5] overflow-hidden rounded-2xl reveal" data-reveal data-reveal-delay="60">
+            <picture>
+              <source type="image/webp" srcset="%BASE_URL%img/gallery-11-480.webp 480w, %BASE_URL%img/gallery-11-768.webp 768w, %BASE_URL%img/gallery-11-1024.webp 1024w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
+              <img src="%BASE_URL%img/gallery-11-fallback.jpg" alt="Tazón de fruta fresca con flor comestible" class="h-full w-full object-cover transition-transform duration-700 ease-capital group-hover:scale-105 group-active:scale-105" width="1440" height="1800" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+          <figure class="gallery-item group relative block aspect-[4/5] overflow-hidden rounded-2xl reveal" data-reveal data-reveal-delay="120">
+            <picture>
+              <source type="image/webp" srcset="%BASE_URL%img/gallery-12-480.webp 480w, %BASE_URL%img/gallery-12-768.webp 768w, %BASE_URL%img/gallery-12-1024.webp 1024w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" />
+              <img src="%BASE_URL%img/gallery-12-fallback.jpg" alt="Café helado junto a enchiladas suizas" class="h-full w-full object-cover transition-transform duration-700 ease-capital group-hover:scale-105 group-active:scale-105" width="1440" height="1800" loading="lazy" decoding="async" />
+            </picture>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <!-- MOCK: testimonios de ejemplo — sustituir por reseñas reales del cliente -->
+    <section id="testimonios" class="bg-capital-cream py-24 sm:py-28 dg:py-32">
+      <div class="mx-auto max-w-[1440px] px-5 sm:px-8 dg:px-12">
+        <div class="mx-auto max-w-2xl text-center reveal" data-reveal>
+          <p class="kicker text-capital-black/65">Comensales</p>
+          <h2 class="mt-4 font-display text-4xl font-bold leading-tight text-capital-black sm:text-5xl">
+            Lo que se vive en Capital Coffee
+          </h2>
+        </div>
+
+        <div class="mt-14 grid gap-6 md:grid-cols-3">
+          <blockquote class="reveal rounded-3xl bg-capital-white p-8 shadow-sm" data-reveal>
+            <p class="text-lg leading-relaxed text-capital-black">
+              "El Paquete Capital es mi pedido de siempre — nunca falla y siempre alcanza."
+            </p>
+            <footer class="kicker mt-6 text-capital-black/65">— Comensal</footer>
+          </blockquote>
+          <blockquote class="reveal rounded-3xl bg-capital-white p-8 shadow-sm" data-reveal data-reveal-delay="80">
+            <p class="text-lg leading-relaxed text-capital-black">
+              "Vengo a trabajar aquí casi cada semana. El café es excelente y el ambiente invita a quedarse."
+            </p>
+            <footer class="kicker mt-6 text-capital-black/65">— Comensal</footer>
+          </blockquote>
+          <blockquote class="reveal rounded-3xl bg-capital-white p-8 shadow-sm" data-reveal data-reveal-delay="160">
+            <p class="text-lg leading-relaxed text-capital-black">
+              "Los huevos benedictinos son de lo mejor que he probado en la ciudad."
+            </p>
+            <footer class="kicker mt-6 text-capital-black/65">— Comensal</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA INTERMEDIO -->
+    <section class="bg-capital-black py-20 text-center text-capital-white">
+      <div class="mx-auto max-w-2xl px-5 reveal" data-reveal>
+        <h2 class="font-display text-3xl font-bold sm:text-4xl">¿Ya se te antojó tu brunch?</h2>
+        <a
+          href="https://wa.me/524442468714"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-gold mt-8 inline-flex"
+        >Ordena por WhatsApp</a>
+      </div>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section id="ubicacion" class="bg-capital-cream py-24 sm:py-28 dg:py-32">
+      <div class="mx-auto grid max-w-[1440px] items-center gap-12 px-5 sm:px-8 md:grid-cols-2 md:gap-16 dg:px-12">
+        <div class="reveal" data-reveal>
+          <p class="kicker text-capital-black/65">Ubicación</p>
+          <h2 class="mt-4 font-display text-4xl font-bold leading-tight text-capital-black sm:text-5xl">
+            Visítanos en Colonia Jardín
+          </h2>
+          <address class="mt-6 not-italic text-lg leading-relaxed text-capital-black/65">
+            Av. Cuauhtémoc 1327, Col. Jardín<br />
+            San Luis Potosí, S.L.P. 78270
+          </address>
+          <p class="mt-4 text-lg leading-relaxed text-capital-black/65">
+            <strong class="text-capital-black">Horario:</strong> Lunes a Domingo, 8:00 am – 10:00 pm
+          </p>
+          <p class="mt-6 max-w-md text-capital-black/65">
+            Tu escape favorito en la ciudad, abierto todos los días para el café, el brunch o la sobremesa.
+          </p>
+        </div>
+        <div class="reveal aspect-square overflow-hidden rounded-3xl md:aspect-[4/5]" data-reveal data-reveal-delay="120">
+          <iframe
+            title="Mapa de ubicación de Capital Coffee en Av. Cuauhtémoc 1327, Col. Jardín, San Luis Potosí"
+            src="https://www.google.com/maps?q=Av.+Cuauht%C3%A9moc+1327,+Col.+Jard%C3%ADn,+San+Luis+Potos%C3%AD,+S.L.P.+78270&output=embed"
+            class="h-full w-full border-0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="bg-capital-black py-24 text-center text-capital-white sm:py-28">
+      <div class="mx-auto max-w-2xl px-5 reveal" data-reveal>
+        <h2 class="font-display text-3xl font-bold sm:text-4xl">Ven a vivir tu escape favorito.</h2>
+        <a
+          href="https://wa.me/524442468714"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-gold mt-8 inline-flex"
+        >Ordena por WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="bg-capital-black py-16 text-capital-white/80">
+    <div class="mx-auto max-w-[1440px] px-5 sm:px-8 dg:px-12">
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <p class="kicker text-capital-gold">Contacto</p>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li><a class="footer-link" href="https://wa.me/524442468714" target="_blank" rel="noopener noreferrer">WhatsApp +52 444 246 8714</a></li>
+            <li><a class="footer-link" href="tel:+524442468714">+52 444 246 8714</a></li>
+            <li><a class="footer-link" href="mailto:capitalcoffeeslp@gmail.com">capitalcoffeeslp@gmail.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="kicker text-capital-gold">Síguenos</p>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li><a class="footer-link" href="https://www.instagram.com/capitalcoffeesanluis" target="_blank" rel="noopener noreferrer">Instagram @capitalcoffeesanluis</a></li>
+            <li><a class="footer-link" href="https://www.facebook.com/p/Capital-Coffee-San-Luis-61573811275239" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="kicker text-capital-gold">Ubicación</p>
+          <address class="mt-4 not-italic text-sm leading-relaxed">
+            Av. Cuauhtémoc 1327, Col. Jardín<br />
+            San Luis Potosí, S.L.P. 78270
+          </address>
+        </div>
+        <div>
+          <p class="kicker text-capital-gold">Enlaces</p>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li><a class="footer-link" href="#paquete-capital">Paquete Capital</a></li>
+            <li><a class="footer-link" href="#menu">Menú</a></li>
+            <li><a class="footer-link" href="#ubicacion">Ubicación</a></li>
+            <li><a class="footer-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-14 flex flex-col items-center gap-4 border-t border-capital-white/10 pt-8 text-center">
+        <img src="%BASE_URL%img/logo.png" alt="Capital Coffee" class="h-8 w-auto opacity-80" width="220" height="220" />
+        <p class="text-xs text-capital-white/50">© 2026 Capital Coffee. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "Capital Coffee",
+  "short_name": "Capital Coffee",
+  "description": "Café de especialidad y brunch en San Luis Potosí.",
+  "start_url": "/capital-coffee/",
+  "scope": "/capital-coffee/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#121212",
+  "lang": "es-MX",
+  "icons": [
+    { "src": "/capital-coffee/icons/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/capital-coffee/icons/favicon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

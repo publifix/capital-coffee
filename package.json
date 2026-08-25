@@ -1,0 +1,22 @@
+{
+  "name": "capital-coffee",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "optimize-images": "node scripts/optimize-images.mjs",
+    "dev": "npm run optimize-images && vite",
+    "build": "npm run optimize-images && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "sharp": "^0.35.3",
+    "tailwindcss": "^4.3.3",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "lenis": "^1.3.26"
+  }
+}
