@@ -6,6 +6,11 @@
   --color-capital-white: #fdfdfc;
   --color-capital-cream: #f5f1e8;
   --color-capital-stone: #8c8477;
+  /* AA-safe secondary-text stand-in for Gris Piedra on light backgrounds:
+     the brand token (#8C8477) is ~3.3:1 on Crema Suave, below the 4.5:1
+     text minimum. This solid, slightly darker gray keeps the same muted
+     role (prices, descriptions, kickers, labels) while passing AA. */
+  --color-capital-muted: #5a5a55;
 
   --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
   --font-body: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
@@ -261,10 +266,6 @@
     transform: translateY(-100%);
   }
 
-  .menu-category__panel.is-open {
-    grid-template-rows: 1fr;
-  }
-
   #preloader {
     transition: opacity 0.5s var(--ease-capital), visibility 0.5s var(--ease-capital);
   }
@@ -289,4 +290,15 @@
       transition-duration: 0.01ms !important;
     }
   }
+}
+
+/*
+ * Unlayered on purpose: Tailwind v4 places arbitrary utilities like
+ * `grid-rows-[0fr]` in its `utilities` cascade layer, which beats any
+ * selector inside `@layer components` regardless of specificity. An
+ * unlayered rule always wins over a layered one, so this stays outside
+ * `@layer` to reliably override the closed-state utility class.
+ */
+.menu-category__panel.is-open {
+  grid-template-rows: 1fr;
 }
